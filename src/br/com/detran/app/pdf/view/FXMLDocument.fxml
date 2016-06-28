@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="552.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.detran.app.pdf.view.FXMLDocumentController">
+    <children>
+      <Rectangle blendMode="RED" fill="#e8e9eb" height="268.0" layoutX="63.0" layoutY="191.0" stroke="#e4e3e3" strokeType="OUTSIDE" width="296.0">
+         <cursor>
+            <Cursor fx:constant="W_RESIZE" />
+         </cursor>
+      </Rectangle>
+        <Button fx:id="fileSelectBtn" cacheHint="SCALE" layoutX="90.0" layoutY="255.0" onAction="#handleButtonAction" prefHeight="42.0" prefWidth="240.0" text="Enviar Arquivos" AnchorPane.rightAnchor="102.0" />
+      <Label layoutX="107.0" layoutY="214.0" text="Selecione o(s) arquivo(s) pdf" />
+      <Accordion layoutX="235.0" layoutY="142.0" />
+      <Separator layoutX="7.0" layoutY="10.0" prefHeight="3.0" prefWidth="406.0" />
+      <Separator layoutX="417.0" layoutY="122.0" orientation="VERTICAL" prefHeight="393.0" prefWidth="0.0" />
+      <Separator layoutX="6.0" layoutY="529.0" prefHeight="14.0" prefWidth="415.0" />
+      <Label layoutX="88.0" layoutY="169.0" text="SOFTWARE REMOVEDOR DE PÁGINAS" />
+      <Label layoutX="170.0" layoutY="142.0" text="DETRAN TO" />
+      <ProgressBar fx:id="fileStatusBar" layoutX="81.0" layoutY="405.0" prefHeight="23.0" prefWidth="240.0" progress="0.0" />
+      <Label layoutX="83.0" layoutY="379.0" text="Status" />
+      <Button fx:id="btnStart" disable="true" layoutX="138.0" layoutY="310.0" mnemonicParsing="false" onAction="#startProccessingFiles" text="Iniciar Remoção" />
+      <Label fx:id="lblPercent" layoutX="300.0" layoutY="379.0" text="0%" />
+      <ImageView fitHeight="150.0" fitWidth="148.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/icone.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

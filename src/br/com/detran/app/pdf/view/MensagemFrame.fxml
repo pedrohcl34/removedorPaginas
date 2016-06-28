@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.detran.app.pdf.view.MensagemFrameController">
+   <children>
+      <Button fx:id="btnOk" layoutX="257.0" layoutY="127.0" mnemonicParsing="false" onAction="#okButton" text="Confirmar" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4d0d7" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b4d0d7" height="45.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <Label layoutX="101.0" layoutY="12.0" text="Informe o nome da pasta para armazenar os documentos">
+         <font>
+            <Font name="Calibri" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFolderName" layoutX="116.0" layoutY="67.0" prefHeight="31.0" prefWidth="371.0" />
+   </children>
+</AnchorPane>
